@@ -9,5 +9,6 @@ namespace YoutubBlog.Entity.Entities
 {
     public class AppUserLogin:IdentityUserLogin<Guid>
     {
+
     }
 }
