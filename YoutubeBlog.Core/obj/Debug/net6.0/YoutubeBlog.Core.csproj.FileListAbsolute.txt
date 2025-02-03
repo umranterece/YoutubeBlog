@@ -1,0 +1,12 @@
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\bin\Debug\net6.0\YoutubeBlog.Core.deps.json
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\bin\Debug\net6.0\YoutubeBlog.Core.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\bin\Debug\net6.0\YoutubeBlog.Core.pdb
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.AssemblyInfoInputs.cache
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.AssemblyInfo.cs
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.csproj.CoreCompileInputs.cache
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\refint\YoutubeBlog.Core.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.pdb
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\ref\YoutubeBlog.Core.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubeBlog.Core\obj\Debug\net6.0\YoutubeBlog.Core.sourcelink.json

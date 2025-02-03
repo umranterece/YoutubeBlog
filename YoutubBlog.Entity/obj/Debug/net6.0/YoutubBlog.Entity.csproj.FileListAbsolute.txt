@@ -1,0 +1,16 @@
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\bin\Debug\net6.0\YoutubBlog.Entity.deps.json
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\bin\Debug\net6.0\YoutubBlog.Entity.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\bin\Debug\net6.0\YoutubBlog.Entity.pdb
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\bin\Debug\net6.0\YoutubeBlog.Core.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\bin\Debug\net6.0\YoutubeBlog.Core.pdb
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.csproj.AssemblyReference.cache
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.AssemblyInfoInputs.cache
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.AssemblyInfo.cs
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBl.2466CD5D.Up2Date
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\refint\YoutubBlog.Entity.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.pdb
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\ref\YoutubBlog.Entity.dll
+C:\Users\Umran\Desktop\CemKeskin\YoutubeBlog\YoutubBlog.Entity\obj\Debug\net6.0\YoutubBlog.Entity.sourcelink.json
