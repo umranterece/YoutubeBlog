@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using YoutubBlog.Entity.DTOs.Users;
 using YoutubBlog.Entity.Entities;
 
 namespace YoutubeBlog.Web.Areas.Admin.Controllers
@@ -23,11 +24,45 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Login()
-        //{
-        //    return View();
-        //}
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Login(UserLoginDto userLoginDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByEmailAsync(userLoginDto.Email);
+                if (user != null) {
+
+                    var result = await signInManager.PasswordSignInAsync(user, userLoginDto.Password, userLoginDto.RememberMe, false);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home",new { Area="Admin" });
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Eposta veya sifreniz yanlistir.");
+                        return View();
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Eposta veya sifreniz yanlistir.");
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home", new { Area = "" });
+        }
 
 
     }
