@@ -120,8 +120,7 @@
                             </a>
                         </div>
                         <!-- /Logo -->
-                        <h4 class="mb-2">Welcome to Sneat! 👋</h4>
-                        <p class="mb-4">Please sign-in to your account and start the adventure</p>
+                        <h4 class="mb-2">Giriş Yap</h4>
 
                         <form asp-action="Login" asp-controller="Auth" id="formAuthentication" class="mb-3" method="POST">
                             <div asp-validation-summary="All"></div>
@@ -138,9 +137,6 @@
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
                                     <label class="form-label" for="password">Şifre</label>
-                                    <a href="auth-forgot-password-basic.html">
-                                        <small>Forgot Password?</small>
-                                    </a>
                                 </div>
                                 <div class="input-group input-group-merge">
                                     <input  asp-for="Password"  type="password"
@@ -165,9 +161,9 @@
                         </form>
 
                         <p class="text-center">
-                            <span>New on our platform?</span>
+                            <span>Hesabınız Yok mu?</span>
                             <a href="auth-register-basic.html">
-                                <span>Create an account</span>
+                                <span>Hemen Kaydol</span>
                             </a>
                         </p>
                     </div>
