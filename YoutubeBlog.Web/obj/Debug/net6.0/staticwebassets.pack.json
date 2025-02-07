@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\js\\articleIndex.js",
+      "PackagePath": "staticwebassets\\js\\articleIndex.js"
+    },
+    {
       "Id": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

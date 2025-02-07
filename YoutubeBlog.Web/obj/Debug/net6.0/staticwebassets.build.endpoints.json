@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "js/articleIndex.4jco52corc.js",
+      "AssetFile": "js/articleIndex.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 20:59:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4jco52corc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI="
+        },
+        {
+          "Name": "label",
+          "Value": "js/articleIndex.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/articleIndex.js",
+      "AssetFile": "js/articleIndex.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 20:59:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI="
+        }
+      ]
+    },
+    {
       "Route": "js/site.6b9nfc4n3r.js",
       "AssetFile": "js/site.js",
       "Selectors": [],

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B2aIuoMUTIQAEK8sGOc7I7HNsLFFTQs/sIUk3u6xbFA=",
+  "Hash": "A8DmCjLiWhGNaCDq8cOTYLKB4nI6oBD8Gvmsm1+olh4=",
   "Source": "YoutubeBlog.Web",
   "BasePath": "_content/YoutubeBlog.Web",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\js\\articleIndex.js",
+      "SourceId": "YoutubeBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\",
+      "BasePath": "_content/YoutubeBlog.Web",
+      "RelativePath": "js/articleIndex#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4jco52corc",
+      "Integrity": "kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\articleIndex.js"
     },
     {
       "Identity": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\js\\site.js",
@@ -6542,6 +6563,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/articleIndex.4jco52corc.js",
+      "AssetFile": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\js\\articleIndex.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 20:59:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4jco52corc"
+        },
+        {
+          "Name": "label",
+          "Value": "js/articleIndex.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI="
+        }
+      ]
+    },
+    {
+      "Route": "js/articleIndex.js",
+      "AssetFile": "C:\\Users\\Umran\\Desktop\\CemKeskin\\YoutubeBlog\\YoutubeBlog.Web\\wwwroot\\js\\articleIndex.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 20:59:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kH3D0Sas+rPO74+DAcih0SID6cBgOcXglH/xheEFqEI="
         }
       ]
     },
