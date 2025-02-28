@@ -11,10 +11,12 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
     public class ArticleController : Controller
     {
         private readonly IArticleService articleService;
+        private readonly ICategoryService categoryService;
 
-        public ArticleController(IArticleService articleService)
+        public ArticleController(IArticleService articleService,ICategoryService categoryService)
         {
             this.articleService = articleService;
+            this.categoryService = categoryService;
         }
         public async Task<IActionResult> Index()
         {
@@ -22,10 +24,23 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
             return View(artisles);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Add(ArticleDto articleDto)
+        [HttpGet]
+        public async Task<IActionResult> Add()
         {
-            return View();
+            var categories = await categoryService.GetAllCategoriesNonDeleted();
+            return View(new ArticleAddDto { Categories=categories });
+        }
+
+        
+        [HttpPost]
+        public async Task<IActionResult> Add(ArticleAddDto articleAddDto)
+        {
+            await articleService.CreateArticleAsync(articleAddDto);
+
+            RedirectToAction("Index", "Article", new { Area = "Admin" });
+            
+            var categories = await categoryService.GetAllCategoriesNonDeleted();
+            return View(new ArticleAddDto { Categories = categories });
         }
     }
 }

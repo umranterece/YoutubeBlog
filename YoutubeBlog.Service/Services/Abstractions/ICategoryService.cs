@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using YoutubBlog.Entity.DTOs.Articles;
-using YoutubBlog.Entity.Entities;
+using YoutubBlog.Entity.DTOs.Categories;
 
 namespace YoutubeBlog.Service.Services.Abstractions
 {
-    public interface IArticleService
+    public interface ICategoryService
     {
-        Task<List<ArticleDto>> GetAllArticleWithCategoryNonDeletedAsync();
+       public Task<List<CategoryDto>> GetAllCategoriesNonDeleted();
 
-        Task CreateArticleAsync(ArticleAddDto articleAddDto);
     }
 }
