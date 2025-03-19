@@ -51,5 +51,17 @@ namespace YoutubeBlog.Service.Services.Concrete
             var map = mapper.Map<ArticleDto>(article);
             return map;
         }
+
+        public async Task UpdateArticleAsync(ArticleUpdateDto articleUpdateDto)
+        {
+            var article = await unitOfWork.GetRepository<Article>().GetAsync(x => x.IsDeleted == false && x.Id == articleUpdateDto.Id, x => x.Category);
+           
+            article.Title=articleUpdateDto.Title;
+            article.Content=articleUpdateDto.Content;
+            article.CategoryId=articleUpdateDto.CategoryId;
+
+            await unitOfWork.GetRepository<Article>().UpdateAsync(article);
+            await unitOfWork.SaveAsync();
+        }
     }
 }
