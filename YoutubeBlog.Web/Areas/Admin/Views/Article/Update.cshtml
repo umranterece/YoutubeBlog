@@ -16,6 +16,7 @@
                 <div class="card mb-4">
                     <h5 class="card-header">Default</h5>
                     <form asp-controller="Article" asp-action="Update" method="post" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly"></div>
 
                         <div class="card-body">
                             <input type="hidden" asp-for="Id" />
@@ -31,11 +32,13 @@
                             <div class="form-group">
                                 <label asp-for="Title" class="form-label">Baslik</label>
                                 <input asp-for="Title" type="text" class="form-control mb-3" />
+                                <span asp-validation-for="Title" class="text-danger"></span>
 
                             </div>
                             <div class="form-group">
                                 <label asp-for="Content" for="defaultFormControlInput" class="form-label">Icerik</label>
                                 <textarea asp-for="Content" type="text" rows="10" class="form-control mb-3"> </textarea>
+                                <span asp-validation-for="Content" class="text-danger"></span>
 
                             </div>
 
