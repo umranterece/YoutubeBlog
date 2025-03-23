@@ -18,5 +18,22 @@
                 return $"{articleTitle} baslikli makale basaryila silinmistir.";
             }
         }
+
+        public static class Category
+        {
+            public static string Add(string categoryName)
+            {
+                return $"{categoryName} baslikli kategori basaryila eklenmistir.";
+            }
+
+            public static string Update(string categoryName)
+            {
+                return $"{categoryName} baslikli kategori basaryila guncellenmistir.";
+            }
+            public static string Delete(string categoryName)
+            {
+                return $"{categoryName} baslikli kategori basaryila silinmistir.";
+            }
+        }
     }
 }
