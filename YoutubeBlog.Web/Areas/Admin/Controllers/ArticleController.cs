@@ -9,6 +9,8 @@ using YoutubBlog.Entity.Entities;
 using YoutubeBlog.Service.Services.Abstractions;
 using YoutubeBlog.Service.Services.Concrete;
 using FluentValidation.AspNetCore;
+using NToastNotify;
+using YoutubeBlog.Web.ResultMessages;
 
 namespace YoutubeBlog.Web.Areas.Admin.Controllers
 {
@@ -20,13 +22,15 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
         private readonly ICategoryService categoryService;
         private readonly IMapper mapper;
         private readonly IValidator<Article> validator;
+        private readonly IToastNotification toastNotification;
 
-        public ArticleController(IArticleService articleService, ICategoryService categoryService, IMapper mapper, IValidator<Article> validator)
+        public ArticleController(IArticleService articleService, ICategoryService categoryService, IMapper mapper, IValidator<Article> validator, IToastNotification toastNotification)
         {
             this.articleService = articleService;
             this.categoryService = categoryService;
             this.mapper = mapper;
             this.validator = validator;
+            this.toastNotification = toastNotification;
         }
         public async Task<IActionResult> Index()
         {
@@ -51,16 +55,17 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
             if (result.IsValid)
             {
                 await articleService.CreateArticleAsync(articleAddDto);
+                toastNotification.AddSuccessToastMessage(Messages.Article.Add(articleAddDto.Title),new ToastrOptions { Title="Basarili" });
                 return RedirectToAction("Index", "Article", new { Area = "Admin" });
             }
             else
             {
                 result.AddToModelState(this.ModelState);
-                var categories = await categoryService.GetAllCategoriesNonDeleted();
-                return View(new ArticleAddDto { Categories = categories });
+               
             }
 
-
+            var categories = await categoryService.GetAllCategoriesNonDeleted();
+            return View(new ArticleAddDto { Categories = categories });
         }
 
         [HttpGet]
@@ -86,7 +91,10 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
 
             if (result.IsValid)
             {
-                await articleService.UpdateArticleAsync(articleUpdateDto);
+                var title = await articleService.UpdateArticleAsync(articleUpdateDto);
+                toastNotification.AddSuccessToastMessage(Messages.Article.Update(title),new ToastrOptions { Title = "Islem Basarili"});
+                return RedirectToAction("Index", "Article", new { Area = "Admin" });
+
             }
             else
             {
@@ -102,7 +110,8 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(Guid articleId)
         {
-            await articleService.SafeDeteleArticleAsync(articleId);
+            var title = await articleService.SafeDeteleArticleAsync(articleId);
+            toastNotification.AddInfoToastMessage(Messages.Article.Delete(title), new ToastrOptions { Title = "Basarili" });
             return RedirectToAction("Index", "Article", new { Area = "Admin" });
         }
     }
