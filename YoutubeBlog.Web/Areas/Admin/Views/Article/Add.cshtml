@@ -15,7 +15,13 @@
                         <div class="card-body">
 
                             <div class="form-group">
+
                                 <label asp-for="CategoryId" class="form-label">Kategori</label>
+
+                                <a class="btn btn-primary text-light float-end" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                   Yeni Kategori ekle <i class="bx bx-plus"></i>
+                                </a>
+
                                <select id="categoryList" class="form-control" asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))">
 
                                </select>
@@ -56,6 +62,31 @@
 
 
 
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Yeni Kategori</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="d-block" class="form-control">Kategori Adi</label>
+                                    <input type="text" class="form-control" id="categoryName" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Iptal</button>
+                            <button type="button" class="btn btn-primary" id="btnSave">Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -66,3 +97,15 @@
     <div class="content-backdrop fade"></div>
 </div>
 <!-- Content wrapper -->
+@section Scripts{
+
+    <script src="~/js/categoryAdd.js" > </script>
+   <script>
+        var app= app || {};
+        app.Urls = app.Urls || {};
+
+        app.Urls.baseUrl = '@Url.Content("~")';
+        app.Urls.categoryAddUrl="@(Url.Action("AddWithAjax","Category"))";
+        app.Urls.articleAddUrl = "@(Url.Action("Add", "Article"))";
+   </script>
+}

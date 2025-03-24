@@ -57,6 +57,24 @@ namespace YoutubeBlog.Web.Areas.Admin.Controllers
             return View();
 
         }
+        [HttpPost]
+        public async Task<IActionResult> AddWithAjax([FromBody] CategoryAddDto categoryAddDto)
+        {
+            var map = mapper.Map<Category>(categoryAddDto);
+            var result = await validator.ValidateAsync(map);
+
+            if (result.IsValid)
+            {
+                await categoryService.CreateCategoryAsync(categoryAddDto);
+                toastNotification.AddSuccessToastMessage(Messages.Category.Add(categoryAddDto.Name), new ToastrOptions { Title = "Basarili" });
+                return Json(Messages.Category.Add(categoryAddDto.Name));
+            }
+            else
+            {
+                toastNotification.AddErrorToastMessage(result.Errors.First().ErrorMessage, new ToastrOptions { Title = "Hatali" });
+                return Json(result.Errors.First().ErrorMessage);
+            }
+        }
 
         [HttpGet]
         public async Task<IActionResult> Update(Guid categoryId)
